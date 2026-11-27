@@ -1,4 +1,4 @@
 -10% > stock change [%] - 0 (sharp decline)
--10% < stock change[%] < 0 - 1 (small decline)
+-10% =< stock change[%] < 0 - 1 (small decline)
 0% <= stock change[%] < 10% - 2 (small growth)
-10% < stock change [%] - 3 (sharp growth)
+10% =< stock change [%] - 3 (sharp growth)
