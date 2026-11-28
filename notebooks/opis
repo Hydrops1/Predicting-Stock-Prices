@@ -2,3 +2,14 @@
 -10% < stock change[%] < 0 - 1 (small decline)
 0% <= stock change[%] < 10% - 2 (small growth)
 10% < stock change [%] - 3 (sharp growth)
+
+1. Logarytmiczne stopy zwrotu z kilku okien czasowych (np. 1, 5 i 20 dni)Dlaczego: To najczystsza informacja o samym ruchu ceny. Pozwala modelowi uchwycić zarówno krótkoterminowe odbicia, jak i miesięczne momentum bez obciążenia surową wartością akcji.
+2. Odległość ceny od średniej kroczącej: $(Close - EMA_{50}) / EMA_{50}$Dlaczego: Najprostszy i najskuteczniejszy wskaźnik określający reżim rynkowy – mówi modelowi, czy spółka jest w trendzie wzrostowym, czy spadkowym oraz jak mocno jest „rozciągnięta” względem swojej średniej.
+3. RSI (14-okresowy)Dlaczego: Najbardziej uniwersalny oscylator. Jest naturalnie znormalizowany (0–100) i świetnie sygnalizuje momenty lokalnego wykupienia lub wyprzedania, w których rośnie prawdopodobieństwo korekty.
+4. Znormalizowany ATR: $ATR_{14} / Close$Dlaczego: Kluczowa miara zmienności i ryzyka. Informuje model, jak gwałtownie zachowuje się dana spółka (czy porusza się o 0,5% dziennie, czy o 5%), co bezpośrednio wpływa na skalę oczekiwanych przyszłych ruchów.
+5. Relatywny wolumen (RVOL): $Volume / SMA(Volume, 20)$Dlaczego: Potwierdza wiarygodność ruchu. Zmiana ceny na wolumenie 3-krotnie wyższym od średniej ma zupełnie inną wagę predykcyjną niż ten sam ruch przy niskiej płynności.
+6. Siła relatywna względem rynku (Excess Return): $Zwrot_{spółki} - Zwrot_{indeksu}$Dlaczego: Niezbędne przy trenowaniu na wielu spółkach. Oddziela indywidualną siłę danej firmy od ogólnego sentymentu panującego na całej giełdzie (np. WIG czy S&P 500).
+
+Franek - 1,3
+Maciej - 2,6
+Antek - 4,5
